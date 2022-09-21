@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+html {
+   font-family: "Montserrat", sans-serif;
+   scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+   background-image: url(./content/img/bg-desktop.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.link-underline {
+   border-bottom-width: 0;
+   background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+   background-size: 0 2px;
+   background-position: 0 100%;
+   background-repeat: no-repeat;
+   transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+   background-image: linear-gradient(transparent, transparent),
+      linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.link-underline:hover {
+   background-size: 100% 2px;
+   background-position: 0 100%;
+}
+
+@media (min-width: 480px) {
+   body {
+      background-image: url(./content/img/bg-mobile.png);
+   }
 }
