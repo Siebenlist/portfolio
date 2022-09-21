@@ -3,7 +3,7 @@ import { AiFillFilePdf, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
    return (
-      <div className="flex flex-col justify-end items-end w-full h-[150px] bg-[#13B482] mt-20 p-10">
+      <div className="flex flex-col justify-center items-end w-full h-[200px] bg-[#13B482] mt-20 py-10 pr-[350px]">
          <div className="flex flex-row">
             <AiFillLinkedin size={30} color="white" />
             <AiOutlineGithub size={30} color="white" />
