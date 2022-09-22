@@ -5,7 +5,7 @@ export const Schema = yup.object().shape({
    email: yup
       .string()
       .email("Please enter a valid email.")
-      .required("Please enter a email."),
+      .required("Please enter an email."),
    subject: yup.string(),
    message: yup.string().required("Please enter a message."),
 });

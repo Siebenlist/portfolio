@@ -32,7 +32,7 @@ const Contact = () => {
    console.log(errors);
 
    return (
-      <div className="flex flex-col justify-center align-center text-center w-full h-[700px] ">
+      <div className="flex flex-col justify-center align-center text-center w-full h-[850px] ">
          <div className="flex flex-col justify-center align-center bg-white shadow-2xl rounded-[30px] w-[450px] lg:w-[1000px] h-[650px] lg:h-[500px] mx-auto">
             <h1 className="text-3xl lg:text-5xl font-bold text-[#05083F] mb-10 lg:mb-">
                Get In Touch

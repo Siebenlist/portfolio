@@ -14,7 +14,7 @@ const Projects = () => {
    };
 
    return (
-      <div className="flex flex-col justify-center items-center text-center w-full h-[700px] ">
+      <div className="flex flex-col justify-center items-center text-center w-full h-[850px] ">
          <div className="w-full">
             <h1 className="text-[#13B582] text-3xl lg:text-4xl font-bold mb-5">
                Projects
@@ -36,7 +36,7 @@ const Projects = () => {
                      <div className="inline-block">
                         <a className="w-full h-full" href={item.URL}>
                            <img
-                              className="w-[300px] lg:w-[400px] inline-block p-[2rem] cursor-pointer hover:scale-105 ease-in-out duration-300"
+                              className="w-[300px] lg:w-[400px] inline-block p-[2rem] cursor-pointer hover:scale-105 ease-in-out duration-300 drop-shadow-xl"
                               src={item.img}
                               alt=""
                            />
