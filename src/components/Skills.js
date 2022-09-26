@@ -16,7 +16,10 @@ import {
 const Skills = () => {
    return (
       <FadeIn>
-         <div className="flex flex-col mx-auto w-full h-[700px] mt-24 bg-white justify-center align-center">
+         <div
+            id="skills"
+            className="flex flex-col mx-auto w-full h-[700px] mt-24 bg-white justify-center align-center"
+         >
             <div className=" items-center h-[550px]">
                <TrackVisibility>
                   {({ isVisible }) => (

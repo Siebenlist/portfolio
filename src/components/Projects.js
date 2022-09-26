@@ -16,7 +16,10 @@ const Projects = () => {
    };
 
    return (
-      <div className="flex flex-col justify-center items-center text-center w-full h-[850px] ">
+      <div
+         id="projects"
+         className="flex flex-col justify-center items-center text-center w-full h-[850px] "
+      >
          <div className="w-full">
             <TrackVisibility>
                {({ isVisible }) => (

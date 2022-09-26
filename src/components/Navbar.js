@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 import {
    AiOutlineClose,
    AiOutlineMenu,
@@ -16,7 +17,7 @@ const Navbar = () => {
    };
 
    return (
-      <div className="flex justify-end items-center h-32 max-w-[1240px] mx-auto">
+      <div className=" flex justify-end items-center h-32 max-w-[1240px] mx-auto">
          <div className="hidden md:flex items-baseline px-5">
             <a
                className="p-5"
@@ -55,26 +56,45 @@ const Navbar = () => {
          </div>
 
          <ul className="hidden md:flex uppercase font-medium">
-            <li className="p-5">
-               <a href="https://www.google.com">
-                  <span class="link link-underline link-underline-black text-black md:text-sm lg:text-base">
-                     Home
-                  </span>
-               </a>
-            </li>
-            <li className="p-5 font-medium">
-               <a href="https://www.google.com">
+            <li className="p-5 font-medium inline">
+               <Link
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  href
+               >
                   <span class="link link-underline link-underline-black text-black md:text-sm lg:text-base">
                      Skills
                   </span>
-               </a>
+               </Link>
             </li>
-            <li className="p-5 font-medium">
-               <a href="https://www.google.com">
+            <li className="p-5 font-medium inline">
+               <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+               >
                   <span class="link link-underline link-underline-black text-black md:text-sm lg:text-base">
                      Projects
                   </span>
-               </a>
+               </Link>
+            </li>
+            <li className="p-5 font-medium inline">
+               <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+               >
+                  <span class="link link-underline link-underline-black text-black md:text-sm lg:text-base">
+                     Contact
+                  </span>
+               </Link>
             </li>
          </ul>
          <div onClick={handleNav} className="block px-7 md:hidden">
@@ -90,13 +110,37 @@ const Navbar = () => {
          >
             <ul className="pt-24 p-4 uppercase">
                <li className="p-5 border-b border-b-black">
-                  <a href="https://www.google.com">Home</a>
+                  <Link
+                     to="projects"
+                     spy={true}
+                     smooth={true}
+                     offset={50}
+                     duration={500}
+                  >
+                     Skills
+                  </Link>
                </li>
                <li className="p-5 border-b border-b-black">
-                  <a href="https://www.google.com">Projects</a>
+                  <Link
+                     to="projects"
+                     spy={true}
+                     smooth={true}
+                     offset={50}
+                     duration={500}
+                  >
+                     Projects
+                  </Link>
                </li>
                <li className="p-5 border-b border-b-black">
-                  <a href="https://www.google.com">Skills</a>
+                  <Link
+                     to="projects"
+                     spy={true}
+                     smooth={true}
+                     offset={50}
+                     duration={500}
+                  >
+                     Contact
+                  </Link>
                </li>
             </ul>
 

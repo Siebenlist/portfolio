@@ -31,7 +31,10 @@ const Contact = () => {
    });
 
    return (
-      <div className="flex flex-col justify-center align-center text-center w-full h-[850px] ">
+      <div
+         id="contact"
+         className="flex flex-col justify-center align-center text-center w-full h-[850px] "
+      >
          <div className="flex flex-col justify-center align-center bg-white shadow-2xl rounded-[30px] w-[450px] lg:w-[1000px] h-[650px] lg:h-[500px] mx-auto">
             <TrackVisibility>
                {({ isVisible }) => (
