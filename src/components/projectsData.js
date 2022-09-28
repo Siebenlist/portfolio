@@ -1,6 +1,7 @@
 import project1 from "../content/img/project-1.jpg";
 import project2 from "../content/img/project-2.jpg";
 import project3 from "../content/img/project-3.jpg";
+import project4 from "../content/img/project-5.jpg";
 
 export const data = [
    {
@@ -23,8 +24,8 @@ export const data = [
    },
    {
       id: 4,
-      img: project3,
-      desc: "Project desc 1",
-      URL: "https://siebenlist.github.io/advice-generator-app-main/",
+      img: project4,
+      desc: "Lobe tour page",
+      URL: "https://lobe-page.netlify.app/",
    },
 ];
