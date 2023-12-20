@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center">
       <Link className="font-extrabold text-3xl" href="/">
-        <p className="text-black transition-all duration-100 hover:text-[#7B66FF] hover:scale-105 dark:text-white">
+        <p className="text-black transition-all duration-100 hover:text-[#7B66FF] hover:scale-105 dark:text-white hover:dark:text-[#7B66FF]">
           Sieben.dev
         </p>
       </Link>
@@ -19,11 +19,6 @@ const Navbar = () => {
         <li>
           <Link className="text-lg" href={"/about"}>
             About
-          </Link>
-        </li>
-        <li>
-          <Link className="text-lg" href={"/projects"}>
-            Projects
           </Link>
         </li>
         <li>

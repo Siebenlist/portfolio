@@ -2,7 +2,6 @@
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import Link from "next/link";
 import linkLight from "../assets/images/linkLight.svg";
 import linkDark from "../assets/images/linkDark.svg";
 import ProjectCard from "@/components/ProjectCard";
@@ -36,14 +35,14 @@ export default function Home() {
           </span>
         </a>
         <p className="text-xl mt-5">
-          A frontend developer specialized in building accessible, fast, and
+          A Full-stack developer specialized in building accessible, fast, and
           scalable web applications using modern technologies like ReactJS,
           NextJS or NodeJS.
         </p>
         <p className="text-xl mt-5">
           My main focus is on creating user interfaces that are intuitive, easy
           to use and visually appealing. I strongly believe that a
-          well-structured design can stand the test of time.
+          well-structured application can stand the test of time.
         </p>
       </section>
       <section>
@@ -61,7 +60,7 @@ export default function Home() {
             )}
           </span>
         </a>
-        <div className="flex mt-5">
+        <div className="flex justify-between mt-5">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
