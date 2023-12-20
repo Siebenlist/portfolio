@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@keyframes jumpAndChangeColor {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    color: #000; /* Cambia esto al color inicial de tus letras */
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  40% {
+    transform: translateY(-10px);
+    color: #ff0000; /* Cambia esto al color que desees cuando las letras estén saltando */
+  }
+
+  60% {
+    transform: translateY(-5px);
+    color: #0000ff; /* Cambia esto al color que desees cuando las letras estén saltando */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hover\\:jump-and-change:hover {
+  animation: jumpAndChangeColor 0.5s ease-in-out;
 }
