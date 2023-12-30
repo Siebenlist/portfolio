@@ -25,24 +25,18 @@ export default function Home() {
       </h1>
 
       <section className="mb-10">
-        <a
-          href={"/about"}
-          target="_blank"
-          className="inline-flex items-center gap-3 text-2xl font-bold hover:underline"
-        >
-          Hi i&apos;m Santiago ! 👋
-          <span>
-            {theme === "light" ? (
-              <Image src={linkLight} alt="About section icon link" width={20} />
-            ) : (
-              <Image src={linkDark} alt="About section icon link" width={20} />
-            )}
-          </span>
-        </a>
+        <h2 href={"/about"} target="_blank" className="text-2xl font-bold">
+          Hey i&apos;m Santiago ! 👋
+        </h2>
         <p className="text-xl mt-5">
           A Full-stack developer specialized in building accessible, fast, and
           scalable web applications using modern technologies like ReactJS,
           NextJS or NodeJS.
+        </p>
+        <p className="text-xl mt-5">
+          I have extensive experience working with API&apos;s & Relational
+          Databases. I adapt quickly to new work enviroments and project
+          buddies.{" "}
         </p>
         <p className="text-xl mt-5">
           My main focus is on creating user interfaces that are intuitive, easy
@@ -52,7 +46,11 @@ export default function Home() {
         <div className="mt-5">
           {theme === "light" ? (
             <div className="flex items-center gap-2">
-              <a href="https://github.com/Siebenlist" target="_blank">
+              <a
+                data-tooltip-target="tooltip-default"
+                href="https://github.com/Siebenlist"
+                target="_blank"
+              >
                 <Image
                   src={githubLight}
                   alt="Github logo"
@@ -60,7 +58,11 @@ export default function Home() {
                   height={30}
                 />
               </a>
-              <a href="https://www.linkedin.com/in/siebenlist/" target="_blank">
+              <a
+                data-tooltip-target="tooltip-default"
+                href="https://www.linkedin.com/in/siebenlist/"
+                target="_blank"
+              >
                 <Image
                   src={linkedinLight}
                   alt="Github logo"
@@ -71,7 +73,11 @@ export default function Home() {
             </div>
           ) : (
             <div className="flex gap-2">
-              <a href="https://github.com/Siebenlist" target="_blank">
+              <a
+                data-tooltip-target="tooltip-default"
+                href="https://github.com/Siebenlist"
+                target="_blank"
+              >
                 <Image
                   src={githubDark}
                   alt="Github logo"
@@ -79,7 +85,11 @@ export default function Home() {
                   height={30}
                 />
               </a>
-              <a href="https://www.linkedin.com/in/siebenlist/" target="_blank">
+              <a
+                data-tooltip-target="tooltip-default"
+                href="https://www.linkedin.com/in/siebenlist/"
+                target="_blank"
+              >
                 <Image
                   src={linkedinDark}
                   alt="Github logo"
@@ -89,6 +99,15 @@ export default function Home() {
               </a>
             </div>
           )}
+
+          <div
+            id="tooltip-default"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
         </div>
       </section>
       <section>

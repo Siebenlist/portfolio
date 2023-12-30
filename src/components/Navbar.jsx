@@ -17,11 +17,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="text-lg" href={"/about"}>
-            About
-          </Link>
-        </li>
-        <li>
           <ThemeSwitcher />
         </li>
       </ul>
