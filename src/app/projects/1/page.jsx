@@ -1,11 +1,18 @@
 import React from "react";
-import VideoPlayer from "@/components/VideoPlayer";
 import ExternalLink from "@/components/ExternalLink";
+import movieRThumbnail from "@/assets/images/MovieRThumbnail.png";
+import Image from "next/image";
 
 const Page = () => {
   return (
     <section className="max-w-[1000px] mt-10 mb-5">
-      <VideoPlayer />
+      <Image
+        src={movieRThumbnail}
+        alt="MovieR thumbnail"
+        width={1800}
+        height={1000}
+        className="w-full rounded-xl"
+      />
 
       <h1 className="text-4xl md:text-6xl text-[#38419D] dark:text-[#52D3D8] font-bold mt-10 mb-5">
         Movie review application with NextJS & Spring

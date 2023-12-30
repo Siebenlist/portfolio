@@ -1,22 +1,16 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import projectThumbnail from "@/assets/images/projectThumbnail.webp";
 import linkLight from "@/assets/images/linkLight.svg";
 import linkDark from "@/assets/images/linkDark.svg";
 import { useTheme } from "next-themes";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const Page = () => {
   const { theme } = useTheme();
   return (
     <section className="max-w-[1000px] mt-10 mb-5">
-      <div className="w-full">
-        <Image
-          src={projectThumbnail}
-          alt="Project thumbnail"
-          className="w-full p-3"
-        />
-      </div>
+      <VideoPlayer />
 
       <h1 className="text-6xl text-[#38419D] dark:text-[#52D3D8] font-bold mt-10 mb-5">
         E-Store for companies with Spring & Thymeleaf
