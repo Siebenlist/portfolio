@@ -1,6 +1,6 @@
 import React from "react";
 import ExternalLink from "@/components/ExternalLink";
-import movieRThumbnail from "../../../assets/images/movieRThumbnail.png";
+import movieRThumbnail from "@/assets/images/MovieRThumbnail.png";
 import Image from "next/image";
 
 const Page = () => {
