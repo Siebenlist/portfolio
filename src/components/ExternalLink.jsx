@@ -1,7 +1,7 @@
 "use client";
 
-import linkLight from "@/assets/images/linkLight.svg";
-import linkDark from "@/assets/images/linkDark.svg";
+import linkLight from "../assets/images/linkLight.svg";
+import linkDark from "../assets/images/linkDark.svg";
 import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";

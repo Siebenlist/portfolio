@@ -35,7 +35,7 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-xl overflow-hidden">
+    <div className="relative max-w-6xl mx-auto my-8 overflow-hidden">
       <div className="absolute top-4 right-4 z-10">
         <VideoPlayerControls
           progress={videoProgress}
@@ -44,7 +44,7 @@ const VideoPlayer = () => {
         />
       </div>
       <video
-        className="w-full rounded-xl cursor-pointer"
+        className="w-full cursor-pointer"
         ref={videoRef}
         autoPlay
         muted

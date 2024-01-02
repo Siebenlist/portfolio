@@ -18,7 +18,7 @@ const Page = () => {
 
       <a
         href="https://github.com/javierhuebra/Proyecto_Coompitas"
-        className="text-[#38419D] dark:text-[#3b979a] flex items-center gap-2 text-lg hover:underline"
+        className="text-[#181819] dark:text-[#3b979a] flex items-center gap-2 text-lg hover:underline"
         target="_blank"
       >
         Go to the repository for this proyect.{" "}
@@ -48,24 +48,35 @@ const Page = () => {
         <h3 className="text-3xl text-[#3887BE] mb-3 dark:text-[#94cca9] font-bold">
           Main Features
         </h3>
-        <ul className="list-disc text-xl">
+        <ul className="list-disc flex flex-col gap-3 text-xl">
           <li>
-            Main Features Purchasing Chambers: Users can create or join
-            purchasing chambers, where they can place joint orders from a
-            specific supplier.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Main Features Purchasing Chambers
+            </span>
+            : Users can create or join purchasing chambers, where they can place
+            joint orders from a specific supplier.
           </li>
           <li>
-            Cumulative Discounts: As more users join a shopping chamber, the
-            number of products ordered increases, leading to larger discounts on
-            products due to purchasing in larger quantities.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Cumulative Discounts
+            </span>
+            : As more users join a shopping chamber, the number of products
+            ordered increases, leading to larger discounts on products due to
+            purchasing in larger quantities.
           </li>
           <li>
-            Shared Shipping Costs: Shipping costs are split among chamber
-            members, significantly reducing individual shipping costs.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Shared Shipping Costs
+            </span>
+            : Shipping costs are split among chamber members, significantly
+            reducing individual shipping costs.
           </li>
           <li>
-            Variety of Suppliers: We offer a wide selection of suppliers and
-            products for users to choose from.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Variety of Suppliers
+            </span>
+            : We offer a wide selection of suppliers and products for users to
+            choose from.
           </li>
         </ul>
       </div>

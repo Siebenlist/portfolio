@@ -1,6 +1,6 @@
 import React from "react";
 import ExternalLink from "@/components/ExternalLink";
-import movieRThumbnail from "@/assets/images/MovieRThumbnail.png";
+import movieRThumbnail from "@/assets/images/movieRThumbnail.png";
 import Image from "next/image";
 
 const Page = () => {
@@ -11,7 +11,7 @@ const Page = () => {
         alt="MovieR thumbnail"
         width={1800}
         height={1000}
-        className="w-full rounded-xl"
+        className="w-full"
       />
 
       <h1 className="text-4xl md:text-6xl text-[#38419D] dark:text-[#52D3D8] font-bold mt-10 mb-5">
@@ -44,24 +44,36 @@ const Page = () => {
         </h3>
         <ul className="flex flex-col gap-3 list-disc text-xl">
           <li>
-            Review movies: Users can create reviews and share thoughts about
-            movies to everyone in the app. Users can show the author of the
-            review their opinions through likes or dislikes.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Review movies
+            </span>
+            : Users can create reviews and share thoughts about movies to
+            everyone in the app. Users can show the author of the review their
+            opinions through likes or dislikes.
           </li>
           <li>
-            Add to favorites: You can curate a list of your favorite movies, and
-            this selection will be publicly visible on your profile for others
-            to explore and discover your movie preferences.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Add to favorites
+            </span>
+            : You can curate a list of your favorite movies, and this selection
+            will be publicly visible on your profile for others to explore and
+            discover your movie preferences.
           </li>
           <li>
-            Save movies for later: Users can bookmark or save movies they are
-            interested in for future viewing. This list is private and
-            accessible only to the user.
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Save movies for later
+            </span>
+            : Users can bookmark or save movies they are interested in for
+            future viewing. This list is private and accessible only to the
+            user.
           </li>
           <li>
-            Make friends: Connect with other users, build a network, and make
-            friends with similar movie preferences. Users can follow each other,
-            share recommendations, and discover new movies through their friends
+            <span className="text-[#401d84] dark:text-[#719e75] font-semibold">
+              Make friends
+            </span>
+            : Connect with other users, build a network, and make friends with
+            similar movie preferences. Users can follow each other, share
+            recommendations, and discover new movies through their friends
             activity.
           </li>
         </ul>

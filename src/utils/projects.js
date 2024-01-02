@@ -9,12 +9,12 @@ export const projects = [
     id: 2,
     title: "E-Store for companies with Spring & Thymeleaf",
     overview:
-      "This application seeks to facilitate wholesale purchases for local businesses...",
+      "Join chambers and buy things with incredible discounts and rewards...",
   },
   {
     id: 3,
-    title: "Third project not yet finished",
+    title: "Admin dashboard with NextJS & Server Actions",
     overview:
-      "This application seeks to facilitate wholesale purchases for local businesses...",
+      "Find and manage users and products from one single application...",
   },
 ];

@@ -3,13 +3,11 @@
 import { projects } from "@/utils/projects";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import linkLight from "../assets/images/linkLight.svg";
-import linkDark from "../assets/images/linkDark.svg";
 import ProjectCard from "@/components/ProjectCard";
-import githubLight from "../assets/images/githubLight.svg";
-import githubDark from "../assets/images/githubDark.svg";
-import linkedinLight from "../assets/images/linkedinLight.svg";
-import linkedinDark from "../assets/images/linkedinDark.svg";
+import githubLight from "@/assets/images/githubLight.svg";
+import githubDark from "@/assets/images/githubDark.svg";
+import linkedinLight from "@/assets/images/linkedinLight.svg";
+import linkedinDark from "@/assets/images/linkedinDark.svg";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -25,13 +23,17 @@ export default function Home() {
       </h1>
 
       <section className="mb-10">
-        <h2 href={"/about"} target="_blank" className="text-2xl font-bold">
+        <h2
+          href={"/about"}
+          target="_blank"
+          className="text-[#3e2472] dark:text-[#ECF4D6] text-2xl font-bold"
+        >
           Hey i&apos;m Santiago ! 👋
         </h2>
         <p className="text-xl mt-5">
           A Full-stack developer specialized in building accessible, fast, and
           scalable web applications using modern technologies like ReactJS,
-          NextJS or NodeJS.
+          NextJS or NodeJS (ExpressJS).
         </p>
         <p className="text-xl mt-5">
           I have extensive experience working with API&apos;s & Relational
@@ -45,11 +47,11 @@ export default function Home() {
         </p>
         <div className="mt-5">
           {theme === "light" ? (
-            <div className="flex items-center gap-2">
+            <div className="flex gap-2">
               <a
-                data-tooltip-target="tooltip-default"
                 href="https://github.com/Siebenlist"
                 target="_blank"
+                className="hover:scale-105"
               >
                 <Image
                   src={githubLight}
@@ -59,9 +61,9 @@ export default function Home() {
                 />
               </a>
               <a
-                data-tooltip-target="tooltip-default"
                 href="https://www.linkedin.com/in/siebenlist/"
                 target="_blank"
+                className="hover:scale-105"
               >
                 <Image
                   src={linkedinLight}
@@ -74,9 +76,9 @@ export default function Home() {
           ) : (
             <div className="flex gap-2">
               <a
-                data-tooltip-target="tooltip-default"
                 href="https://github.com/Siebenlist"
                 target="_blank"
+                className="hover:scale-105"
               >
                 <Image
                   src={githubDark}
@@ -85,10 +87,11 @@ export default function Home() {
                   height={30}
                 />
               </a>
+
               <a
-                data-tooltip-target="tooltip-default"
                 href="https://www.linkedin.com/in/siebenlist/"
                 target="_blank"
+                className="hover:scale-105"
               >
                 <Image
                   src={linkedinDark}
@@ -99,19 +102,12 @@ export default function Home() {
               </a>
             </div>
           )}
-
-          <div
-            id="tooltip-default"
-            role="tooltip"
-            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-          >
-            Tooltip content
-            <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
         </div>
       </section>
       <section>
-        <h3 className="text-2xl font-bold">Recent projects 👨‍💻</h3>
+        <h3 className="text-[#3e2472] dark:text-[#ECF4D6] text-2xl font-bold">
+          Recent projects 👨‍💻
+        </h3>
         <div className="flex flex-wrap justify-between mt-5 gap-3 md:gap-0">
           {projects.map((project) => {
             return (
