@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import VideoPlayerControls from "./VideoPlayerControls";
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ videoUrl }) => {
   const [isPaused, setIsPaused] = useState(false);
   const [videoDuration, setVideoDuration] = useState();
   const [videoProgress, setVideoProgress] = useState(0);
@@ -51,7 +51,7 @@ const VideoPlayer = () => {
         loop
         onClick={handleVideoPause}
       >
-        <source src="/videos/CoompitasVideo.mp4" />
+        <source src={videoUrl} />
       </video>
     </div>
   );

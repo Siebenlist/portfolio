@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import linkLight from "@/assets/images/linkLight.svg";
 import linkDark from "@/assets/images/linkDark.svg";
+import warnLight from "@/assets/images/warningLight.svg";
 import { useTheme } from "next-themes";
 import VideoPlayer from "@/components/VideoPlayer";
 
@@ -10,7 +11,16 @@ const Page = () => {
   const { theme } = useTheme();
   return (
     <section className="max-w-[1000px] mt-10 mb-5">
-      <VideoPlayer />
+      <VideoPlayer videoUrl={"/videos/CoompitasVideo.mp4"} />
+
+      <div className="w-full p-5 text-black shadow-lg text-lg inline-flex gap-5 items-center bg-yellow-300 dark:bg-[#F2C200] dark:text-black">
+        <Image src={warnLight} width={40} alt="Warning icon" />
+        <strong>
+          {
+            "I'm in the process of enhancing this project to provide more functionality and style improvements. Expect exciting changes soon!"
+          }
+        </strong>
+      </div>
 
       <h1 className="text-6xl text-[#38419D] dark:text-[#52D3D8] font-bold mt-10 mb-5">
         E-Store for companies with Spring & Thymeleaf
